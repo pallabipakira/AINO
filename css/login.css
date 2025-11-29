@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "Clash Display Variable";
+  src: url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.eot");
+  src: url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/2fcd723a1a012506da3928146b19364d.svg#Clash Display Variable")
+      format("svg");
+}
+
+:root {
+  --secondary-color: #7620c2;
+  --primary-color: #41ecff;
+  --third-color: #051747;
+  --text-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+}
+body {
+  height: 100%;
+  font-family: "Clash Display Variable";
+}
+
+.container {
+  max-width: 1950px;
+}
+.nav-logo {
+  width: 200px;
+  padding: 5px;
+  top: -75px;
+}
+
+.nav-logo > a {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-logo > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.full-height-row {
+  min-height: 100vh;
+}
+
+.left-panel {
+  background-color: var(--third-color);
+  color: var(--text-color);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  min-height: 800px;
+}
+
+.left-content {
+  z-index: 10;
+  margin-top: 15vh;
+}
+
+.ai-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ai-subtext {
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 300px;
+  margin-bottom: 2.5rem;
+}
+
+.welcome-block,
+.register-block {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.ai-btn-white {
+  background-color: white;
+  color: var(--third-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.75rem 3.5rem;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+.ai-btn-white:hover {
+  background-color: #f0f0f0;
+  color: var(--third-color);
+  transform: translateY(-2px);
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+}
+
+.right-panel {
+  background-color: blueviolet;
+  color: var(--text-color);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 800px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+.google-icon img{
+    width: 45px;
+    margin-bottom: 25px;
+}
+.custom-form-control {
+  background-color: #ffffff71;
+  border: none;
+  color: var(--text-color);
+  padding: 1rem 1.5rem;
+  border-radius: 10px !important;
+  height: 60px;
+  backdrop-filter: blur(29px);
+  border: 1px solid white;
+}
+.custom-form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.custom-form-control:focus {
+  background-color: rgba(96, 90, 90, 0.25);
+  box-shadow: none;
+  border: none;
+  color: var(--text-color);
+}
+.input-group-text-custom {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  padding-right: 0;
+}
+
+.ai-btn-dark {
+  background-color: var(--third-color);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  border: 1px solid white;
+  margin-top: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+.ai-btn-dark:hover {
+  background-color: #0b1129;
+  transform: translateY(-2px);
+}
+
+.form-hidden {
+  display: none !important;
+}
+.btn-log {
+  background-color: #ffffff;
+  /* color:black; */
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 25px;
+  border: none;
+  margin-top: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+.btn-log a{
+    color: black;
+}
+@media screen and (max-width: 768px) {
+  .left-panel {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .logo {
+    left: 3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .left-panel {
+    min-height: 40vh;
+    padding-top: 7rem;
+  }
+  .decorative-curve {
+    display: none;
+  }
+  .logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .left-content {
+    margin-top: 0;
+  }
+  .form-container-wrapper {
+    padding: 2rem;
+  }
+  .right-panel{
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* .ai-btn-dark {
+    margin-top: 0rem;
+    margin-bottom: 10px;
+  } */
+   
+}
